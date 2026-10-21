@@ -23,8 +23,8 @@ This project is a front-end website designed to provide a simple and user-friend
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - GitHub Pages
 
