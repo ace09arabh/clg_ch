@@ -1,46 +1,140 @@
 <html>
 <body bgcolor="SteelBlue">
 
+
 <style>
 input[type="radio"],
-input[type="checkbox"]{
-width:15px;
-height:15px;
-margin-right:5px;
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .login-box {
-  background-color:white;
-  height:400px;
-  width:350px;
-  margin:80px auto;
-  padding:20px;
-  border-radius:10px;
-  text-align:center;
-}
-input {
-  width:90%;
-  height:40px;
-  margin:10px 0;
-  padding:5px;
-  font-size:16px;
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-button
-{
-height:40px;
-width:195px;
-font-size:20px;
-background-color:#002147;
-color:white;
+input {
+  width: 90%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
 }
-button:hover
-{
-background-color:orange;
+
+button {
+  height: 40px;
+  width: 195px;
+  font-size: 20px;
+  background-color: #002147;
+  color: white;
 }
-.card:hover 
-{
-  transform:translateY(-10px);
+
+button:hover {
+  background-color: orange;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Home page design */
+#Home {
+  margin: 0;
+  padding: 0;
+}
+
+.home-hero {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background-color: #292c35;
+  overflow: hidden;
+}
+
+.home-left {
+  width: 43%;
+  padding: 50px 35px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.home-left h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin: 0 0 15px;
+}
+
+.home-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dddddd;
+  margin-bottom: 30px;
+}
+
+.home-left h2 {
+  color: white;
+}
+
+.home-left .know-more {
+  display: inline-block;
+  width: 145px;
+  padding: 12px 0;
+  background-color: #ff7900;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+.home-left .know-more:hover {
+  background-color: orange;
+}
+
+.home-right {
+  width: 57%;
+  min-height: 500px;
+}
+
+.home-right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+  .home-hero {
+    flex-direction: column;
+  }
+
+  .home-left,
+  .home-right {
+    width: 100%;
+  }
+
+  .home-left {
+    padding: 40px 25px;
+  }
+
+  .home-left h1 {
+    font-size: 30px;
+  }
+
+  .home-right img {
+    min-height: 280px;
+  }
 }
 </style>
 <center>
@@ -158,11 +252,15 @@ setInterval(a,4000)
 
 </center>
 </div><br><br><br>
-<div id="Home"style="display:block">
-<div style="position:absolute;background-color:#292C35;height:950px;width:1015px;left:180;font-size:18px">
-<img id="c" src="clg1.jpeg"style="height:315;width:985;margin:15">
-<center>
-<h2><font color="white">UNLOCK YOUR FUTURE WITH US</h2>
+
+<div id="Home" style="display:block">
+
+  <div class="home-hero">
+
+    <!-- Left side content -->
+    <div class="home-left">
+
+      <h2>UNLOCK YOUR FUTURE WITH US</h2>
 
    <p>
         Start your journey to success at Marwari College Ranchi,
@@ -170,33 +268,58 @@ setInterval(a,4000)
         and lifelong connections are forged in a caring community.
       </p>
 
-<h3>Why Choose Us?</h3>
-<p>Providing quality education and execellent career opportunities. NAAC Accredited Autonomous College With Potential For Excellence.</p></font></center><br>
-<div class="card-container"style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
 
-<div class="card" 
-style="width:300px;padding:20px; border-radius:10px; box-shadow:0 4px 10px gray; background-color:white;">
-<h3><font color="SteelBlue">🎓 Scholarships</h3></font>
-<p>For Both Vocational & Non-Vocational UG and PG Students</p>
+      <h2>Why Choose Us?</h2>
+
+      <p>
+        Providing quality education and excellent career
+        opportunities. NAAC Accredited Autonomous College
+        With Potential For Excellence.
+      </p>
+
+      <a href="#" class="know-more"
+         onclick="a3(); return false;">Know More</a>
+
+    </div>
+
+    <!-- Right side image -->
+    <div class="home-right">
+      <img id="c" src="clg1.jpeg"
+           alt="Marwari College Ranchi">
+    </div>
+
+  </div>
+
+  <!-- College feature cards below the hero -->
+  <div class="card-container"
+       style="display:flex; justify-content:center; gap:20px;
+       flex-wrap:wrap; padding:25px;">
+
+    <div class="card"
+         style="background:white; width:250px; padding:20px;
+         border-radius:10px; box-shadow:0 4px 10px gray;">
+      <h3 style="color:SteelBlue;">🎓 Scholarships</h3>
+      <p>For Both Vocational & Non-Vocational UG and PG Students</p>
+    </div>
+
+    <div class="card"
+         style="background:white; width:250px; padding:20px;
+         border-radius:10px; box-shadow:0 4px 10px gray;">
+      <h3 style="color:SteelBlue;">📚 Facilities</h3>
+      <p>Library, Labs, Sports Complex</p>
+    </div>
+
+    <div class="card"
+         style="background:white; width:250px; padding:20px;
+         border-radius:10px; box-shadow:0 4px 10px gray;">
+      <h3 style="color:SteelBlue;">🏆 Placement</h3>
+      <p>Strong placement support</p>
+    </div>
+
+  </div>
+
 </div>
 
-<div class="card" 
-style="width:300px;padding:20px; border-radius:10px; box-shadow:0 4px 10px gray;background-color:white;">
-<h3><font color="SteelBlue">📚 Facilities</h3></font>
-<p>Library, Labs, Sports Complex</p>
-</div>
-
-<div class="card" 
-style="width:300px;padding:20px; border-radius:10px; box-shadow:0 4px 10px gray;background-color:white;">
-<h3><font color="SteelBlue">🏆 Placement</h3></font>
-<p>Strong placement support</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
 <div id="Register" style="display:none">
 <form onsubmit="return valid()"action="save.php">
 <table border="1" cellpadding="5" cellspacing="0" bgcolor="white">
