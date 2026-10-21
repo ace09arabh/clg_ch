@@ -136,6 +136,79 @@ button:hover {
     min-height: 280px;
   }
 }
+
+  
+.college-footer {
+  background-color: #002147;
+  color: white;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 6%;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #ffb347;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #dddddd;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.footer-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #ffb347;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #52657d;
+  padding: 15px;
+  background-color: #00152e;
+}
+
+.footer-bottom p {
+  margin: 5px;
+  font-size: 13px;
+  color: #dddddd;
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 30px 25px;
+  }
+
+  .footer-section {
+    min-width: 0;
+  }
+}
+
 </style>
 <center>
 <h1><font color="white">Welcome To Marwari College Ranchi</font></h1>
@@ -694,5 +767,43 @@ Course fees vary, with BCA costing ₹45,150 for 3 years, (link unavailable) at 
 </div></center>
 
 </div>
+  <!-- Common Footer -->
+<footer class="college-footer">
+
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2>Marwari College Ranchi</h2>
+      <p>A Unit of Ranchi University</p>
+      <p>Committed to quality education, academic excellence,
+      and student development.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="#" onclick="a1(); return false;">Home</a>
+      <a href="#" onclick="a3(); return false;">About Us</a>
+      <a href="#" onclick="a4(); return false;">Courses</a>
+      <a href="#" onclick="a2(); return false;">Register</a>
+      <a href="#" onclick="a5(); return false;">Login</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Lake Road, Hindpiri, Ranchi, Jharkhand</p>
+      <p>Phone: 0651-2213134</p>
+      <p>Email: marwaricollegeranchi@gmail.com</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Marwari+College+Ranchi"
+         target="_blank">View Location on Google Maps</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Marwari College Ranchi. All Rights Reserved.</p>
+    <p>Designed by Students</p>
+  </div>
+
+</footer>
 </body>
 </html>
