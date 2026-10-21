@@ -4,7 +4,7 @@ A college website developed to present information about Marwari College Ranchi,
 
 ## 🌐 Live Demo
 
-[Visit Marwari College Ranchi Website]([https://ace09arabh.github.io/clg_ch/index.html](https://ace09arabh.github.io/clg_ch/))
+https://ace09arabh.github.io/clg_ch/
 
 ## 📌 About the Project
 
